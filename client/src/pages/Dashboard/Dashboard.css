@@ -1,0 +1,198 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: left;
+    align-items: left;
+    margin-top: 35px;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.feed-filter {
+    display: grid;
+    grid-template-columns: .2fr .2fr;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.btn-active {
+    background-color: rgb(5, 117, 230);
+    border: none;
+    color: white;
+    border-radius: 1rem;
+}
+
+.feed-btn {
+    background-color: white;
+    border: none;
+    /* border-bottom: 3px solid grey; */
+}
+.card {
+    width: 350px;
+    height: 500px;
+    padding: 20px;
+}
+
+.profile-card-top {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.dashboard .profile-card {
+    width: 100%;
+    border-bottom: none;
+    
+}
+
+.dashboard .tweet-card {
+    height: auto;
+}
+.card-body {
+    text-align: center;
+    
+}
+.card-body span {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.card-btn {
+    display: grid;
+    justify-content: right;
+    align-items: right;
+}
+
+.fa-edit {
+    font-size: 28px;
+}
+
+/* .dashboard .profile-bio {
+    width: 20%;
+    font-size: .2rem;
+    margin: auto;
+
+} */
+/***** Tweet Card CSS *******/
+
+.tweet-card {
+    width: 100%;
+    height: 200px;
+}
+
+.tweet-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.card-body {
+    text-align: left;
+}
+.tweet-card-body {
+    padding: 0;
+}
+.engagement {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.engagement-btn {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+}
+
+.engagement-btn:focus {
+    outline: none;
+}
+
+.delete-btn {
+    display: grid;
+    align-items: right;
+    justify-content: right;
+    margin: 0;
+}
+
+.fa-trash-alt {
+    color: red;
+}
+
+@media screen and (max-width: 846px) {
+    .dashboard .follower-text {
+        font-size: .8rem;
+    }
+
+    .dashboard .profile-card-top {
+        width: 150px;
+        height: 150px;
+    }
+
+    .dashboard .profile-bio {
+        font-size: .8rem;
+    }
+
+    .dashboard .tweet-card {
+        width: 500px;
+    }
+
+    .dashboard .tweet-img {
+        width: 125px;
+        height: 125px;
+
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard .profile-card-top {
+        width: 200px;
+        height: 200px;
+    }
+
+    .dashboard .profile-card {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dashboard .tweet-card {
+        width: 100%;
+    }
+    .dashboard .profile-card {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .dashboard .tweet-img {
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .dashboard .profile-card {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .dashboard .card-btn {
+        margin-top: 10px;
+    }
+
+    .feed-filter {
+        grid-template-columns: .3fr .3fr;
+    }
+}
